@@ -1,0 +1,27 @@
+.hero{
+    position:absolute;
+    left:60%;
+    top:150px;
+    border-radius: 50%;
+    z-index:1;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating{
+    0%{
+        transform: translate(0,0px);
+    }
+    50%{
+        transform: translate(0,20px);
+    }
+    100%{
+        transform:translate(0,0px);
+    }
+}
+@media screen and (max-width:943px){
+    .hero{
+        display:none;
+    }
+}

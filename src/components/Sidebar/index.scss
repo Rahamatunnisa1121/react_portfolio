@@ -1,0 +1,198 @@
+.navigationBar{
+    background:#00246B;
+    width:60px;
+    height:100%;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    top:0;
+    left:0;
+    .logo{
+        display:block;
+        padding: 20px 0;
+    }
+    img{
+        display:block;
+        margin:8px auto;
+        width:30px;
+        height:auto;
+    }
+    nav{
+        display:block;
+        text-align: center;
+        position:absolute;
+        height:200px;
+        top:40%;
+        margin-top:-150px;
+        width:100%;
+        a{
+            font-size: 22px;
+            color:#4d4d4e;
+            display:block;
+            line-height: 51px;
+            position:relative;
+            text-decoration: none;
+            i{
+                transition: all 0.3s ease-out;
+            }
+            &:hover{
+                color:#FFFFFF;
+                svg{
+                    opacity:0;
+                }
+                &::after{
+                    opacity:1;
+                }
+            }
+            &::after{
+                content:'';
+                font-size:11px;
+                letter-spacing: 2px;
+                position:absolute;
+                bottom:0;
+                display:block;
+                width:100%;
+                text-align: center;
+                opacity:0;
+                transition: all 0.3s ease-out;
+            }
+            &:first-child{
+                &::after{
+                    content:'Home';
+                }
+            }
+        }
+        a.about-page{
+            &:after{
+                content:'About';
+            }
+        }
+        a.contact-page{
+            &:after{
+                content:'Contact';
+            }
+        }
+        a.skills-page{
+            &:after{
+                content:'Skills';
+            }
+        }
+        a.projects-page{
+            &:after{
+                content:'Projects';
+            }
+        }
+    }
+    a.active{
+        svg{
+            color:#FFFFFF;
+        }
+    }
+    ul{
+        position:absolute;
+        bottom:90px;
+        width:100%;
+        display:block;
+        padding:0;
+        list-style: none;
+        text-align: center;
+        margin:0;
+        li{
+            a{
+                padding: 7px 0;
+                display:block;
+                font-size:18px;
+                line-height: 16px;
+            }
+            :hover svg{
+                color:#FFFFFF;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigationBar {
+        width: 100%; 
+        height: 60px; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 1000;
+        nav{
+            display:flex;
+            flex-direction:row;
+            position:relative;
+            height:unset;
+            left:30px;
+            top:75px;
+            width:50%;
+            gap:30px;
+            a{
+                &::after{
+                    content:'';
+                    font-size:9px;
+                }
+            }
+        }
+        ul{
+            display:flex;
+            flex-direction: row;
+            position:unset;
+            width:30%;
+            gap:20px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navigationBar {
+        height: 50px;
+        nav{
+            left:10px;
+            gap:20px;
+            width:40%;
+            gap:30px;
+            a{
+                font-size: 18px;
+            }
+        }
+        ul{
+            li{
+                a{
+                    font-size:15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .navigationBar {
+        height: 50px;
+        nav{
+            left:10px;
+            gap:15px;
+            width:40%;
+            gap:20px;
+            a{
+                font-size: 15px;
+            }
+        }
+        ul{
+            gap:10px;
+            li{
+                a{
+                    font-size:12px;
+                }
+            }
+        }
+    }
+}

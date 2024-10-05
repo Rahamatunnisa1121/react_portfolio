@@ -1,0 +1,217 @@
+.projectpage{
+    left:10%;
+    position:absolute;
+    top:15%;
+    bottom:15%;
+    width:80%;
+    .text-animate-hover{
+        &:hover{
+            color:#fff;
+        }
+    }
+    h1{
+        font-size: 45px;
+        font-family: 'Coolvetica';
+        color:#00246B;
+        font-weight: 200;
+        margin-top: 0;
+        margin-left: 20px;
+        position: relative;
+        margin-bottom: 60px;
+        left:10px;
+        &::before{
+            content:'<h1>';
+            font-family: 'La Belle Aurore';
+            font-size:18px;
+            position:absolute;
+            margin-top: -10px;
+            left:-10px;
+            opacity:0.6;
+            line-height:18px;
+        }
+        &::after{
+            content:'<h1 />';
+            font-family: 'La Belle Aurore';
+            font-size:18px;
+            position:absolute;
+            margin-left: 20px;
+            left:-30px;
+            opacity:0.6;
+            line-height:18px;
+            bottom:-22px;
+        }
+    }
+    .projects{
+        display:flex;
+        flex-direction: row;
+        bottom:3%;
+        position:absolute;
+        left:5%;
+        gap:30px;
+        width:90%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: stretch;
+        top:20%;
+        opacity:0;
+        animation:backInRight 1s 1.2s forwards;
+        .project{
+            border-radius: 10px;
+            background: linear-gradient(180deg, rgba(119, 214, 246, 0.42) 0%, rgba(255, 255, 255, 0) 100%);
+            background-size: 0 100%;
+            background-repeat: no-repeat;
+            transition: 0.4s;
+            &:hover{
+                background-size: 100% 100%;
+                cursor:pointer;
+            };
+            box-shadow: 0 0 10px 0px #fff;
+            padding: 18px 24px;
+            max-width: 250px;
+            height:380px;
+            .projectImg{
+                height:38%;
+                width:100%;
+                border-radius:10px;
+            }
+            .projectContent{
+                position:relative;
+                height:220px;
+                h3{
+                    font-size: 16px;
+                    font-weight: 700;
+                    font-family:sans-serif;
+                    color:#020472; 
+                    text-decoration: underline;   
+                }
+                p{
+                    font-size: 13px;
+                    font-family: "Coolvetica";
+                    color:#114579;
+                }
+                .skills{
+                    h4{
+                        font-size: 12px;
+                        font-family:'Times New Roman', Times, serif;
+                        color:rgb(1, 12, 20);
+                        margin-bottom: 10px;
+                        text-decoration: underline;
+                    }
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;  
+                        list-style: none; 
+                        gap: 10px;    
+                        padding: 0;      
+                        width: 100%;     
+                    }
+                    
+                    li {
+                        flex: 1 1 auto;   
+                        max-width: 200px;
+                        font-size:14px;
+                        font-family: 'Coolvetica';
+                        color:rgb(94, 22, 22);    
+                    }
+                    
+                }
+                a{
+                    position:absolute;
+                    bottom:0;
+                    right:0;
+                    font-size: 13px;
+                    text-decoration: none;
+                    color:#535353;
+                    font-family: 'Coolvetica';
+                    font-weight: 200;
+                    display: inline-block;
+                    padding: 8px 20px;
+                    border: 2px solid #fff; 
+                    border-radius: 5px; 
+                    box-shadow: 0 0 1px 0px #b5b5b5;
+                    &:hover{
+                        background-color:#c3c2c2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .projectpage {
+        width: 90%;
+        left: 10%;
+        margin-top: -5%;
+    }
+    .projects {
+        width: 100%;
+        gap: 20px;
+        .project {
+            max-width: 220px;
+            height: 350px;
+        }
+    }
+    h1 {
+        font-size: 40px;
+        margin-left:auto;
+    }
+    .tags{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projectpage {
+        top: 17%;
+        bottom: 10%;
+        width: 95%;
+        left: 2.5%;
+    }
+
+    .projects {
+        flex-direction: column;
+        top: 15%;
+        align-items: center;
+        gap: 40px;
+
+        .project {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    h1 {
+        font-size: 35px;
+        left: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projectpage {
+        top: 15%;
+        bottom: 5%;
+        width: 100%;
+        left: 0;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .project {
+            max-width: 90%;
+            height: auto;
+
+            .projectImg {
+                height: auto;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}

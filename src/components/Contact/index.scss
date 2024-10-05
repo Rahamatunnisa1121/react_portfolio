@@ -1,0 +1,180 @@
+.contact-page{
+    .text-zone{
+        left:8%;
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
+        width:33%;
+        h1{
+            font-size: 45px;
+            font-family: 'Coolvetica';
+            color:#00246B;
+            font-weight: 200;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left:10px;
+            &::before{
+                content:'<h1>';
+                font-family: 'La Belle Aurore';
+                font-size:18px;
+                position:absolute;
+                margin-top: -10px;
+                left:-10px;
+                opacity:0.6;
+                line-height:18px;
+            }
+            &::after{
+                content:'<h1 />';
+                font-family: 'La Belle Aurore';
+                font-size:18px;
+                position:absolute;
+                margin-left: 20px;
+                left:-30px;
+                opacity:0.6;
+                line-height:18px;
+                bottom:-22px;
+            }
+        }
+        p{
+            font-size:15px;
+            color:#03045e;
+            font-family: sans-serif;
+            min-width: fit-content;
+            animation:pulse 1s;
+            animation-delay:1.4s;
+        }
+    }
+    .text-animate-hover{
+        &:hover{
+            color:#fff;
+        }
+    }
+    .contact-form{
+        width:100%;
+        margin-top:20px;
+        ul{
+            padding: 0;
+            margin: 0;
+        
+            li {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                margin-bottom: 10px;
+                opacity: 0;
+                overflow: hidden;
+                display: block;
+                clear: both;
+                position: relative;
+                animation: fadeInUp 2s 2s;
+                animation-fill-mode: forwards;
+            }
+            li.half {
+                width: 49%;
+                margin-left: 2%;
+                float: left;
+                clear: none;
+        
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+            input,textarea{
+                font-weight: 400;
+                font-family: sans-serif;
+            }
+            input[type='text'],
+            input[type='email'] {
+                width: 100%;
+                border: 0;
+                background: #A1BAED;
+                height: 40px;
+                font-size: 15px;
+                color: #00246B;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+        }
+        textarea{
+            width:100%;
+            border:0;
+            background:#A1BAED ;
+            height:50px;
+            font-size:16px;
+            color:#00246B;
+            padding:20px;
+            min-height:100px ;
+            box-sizing: border-box;
+        }
+        .submit-button{
+            color:#00246B;
+            padding:8px 10px;
+            background: #fff;
+            font:11px;
+            letter-spacing: 3px;
+            text-decoration:none ;
+            cursor:pointer;
+            border: 1px solid #00246B ;
+            float:right;
+            border-radius: 4px;
+        }
+    }
+    .info-map{
+        position:absolute;
+        background-color:rgb(248, 248, 238);
+        color:#00246B;
+        top:40px;
+        right:30%;
+        z-index: 999999;
+        width:240px;
+        padding:15px;
+        font-family: 'Helvetica';
+        font-size:16px;
+        font-family: 300;
+        opacity:0;
+        animation:fadeIn 1s 1.5s forwards;
+        span{
+            font-size:15px ;
+            display:block;
+            padding-top: 15px;
+            color: purple;
+            text-decoration: underline;
+        }
+    }
+    .map-wrap{
+        background :rgba(8,253,216,0.1);
+        float:right;
+        width:53%;
+        height:100%;
+    }
+}
+.leaflet-container{
+    width:100%;
+    height:100%;
+    position:relative;
+    opacity:0;
+    animation:backInRight 1s 1.2s forwards;
+}
+
+@media screen and (max-width: 1200px) {
+    .info-map {
+        display:none;
+    }
+}
+@media screen and (max-width: 960px){
+    .contact-page{
+        .text-zone{
+            width:70%;
+            margin-bottom: 20px; 
+        }
+        .map-wrap{
+            width:70%;
+            height:600px;
+            margin-top: 60%;
+            float:unset;
+            margin-left: 80px;
+            position:fixed;
+        }
+    }
+}
