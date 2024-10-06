@@ -134,7 +134,61 @@
                 }  
             }
         }
-    }
-            
+    }        
 }
-    
+@media screen and (max-width:1200px)
+{
+    .about-page{
+        .text-zone{
+            left:5%;
+        }
+        .content{
+            left:50%;
+        }
+    }
+}
+@media screen and (max-width:950px)
+{
+    .about-page{
+        display:flex;
+        flex-direction:column;
+        .text-zone{
+            left:10%;
+            width:70%;
+            top:40%;
+        }
+        .content{
+            width:80%;
+            top:70%;
+            left:10%;
+            .aboutItems{
+                margin-left:0;
+                margin-top:-30%;
+            }
+        }
+    }
+}
+@media screen and (max-width:770px)
+{
+    .about-page{
+        .content{
+            .aboutItems{
+                width:90%;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px)
+{
+    .about-page{
+        .text-zone{
+            top:50%;
+            h1{
+                font-size:30px;
+            }
+        }
+        .content{
+            top:100%;
+        }
+    }
+}

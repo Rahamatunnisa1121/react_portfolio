@@ -164,17 +164,47 @@
 }
 @media screen and (max-width: 960px){
     .contact-page{
-        .text-zone{
+        display:flex;
+        flex-direction:column;
+        .text-zone {
             width:70%;
-            margin-bottom: 20px; 
+            position:fixed;
         }
-        .map-wrap{
+        .map-wrap {
+            position:absolute;
             width:70%;
             height:600px;
-            margin-top: 60%;
-            float:unset;
-            margin-left: 80px;
-            position:fixed;
+            float:none;
+            margin-left: 60px;
+            top:90%;
+        }
+    }
+    
+}
+@media screen and (max-width: 505px){
+        .contact-page{
+            .map-wrap {
+                top:100%;
+                margin-left:50px;
+            }
+    }
+}
+@media screen and (max-width: 480px){
+    .text-zone{
+        .contact-form{
+            ul{
+                li.half{
+                    width:100%;
+                    margin-left:0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 360px){
+    .contact-page{
+        .map-wrap {
+            display:none;
         }
     }
 }
