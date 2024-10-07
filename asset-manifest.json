@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react_portfolio/static/css/main.5ecfabba.css",
+    "main.js": "/react_portfolio/static/js/main.cd65ae27.js",
+    "static/js/453.b3faef14.chunk.js": "/react_portfolio/static/js/453.b3faef14.chunk.js",
+    "static/media/amazonClone.png": "/react_portfolio/static/media/amazonClone.7d1116a7670d8f282182.png",
+    "static/media/HerCraft.jpg": "/react_portfolio/static/media/HerCraft.42798ab3ad2d5356fa6d.jpg",
+    "static/media/WeatherApp.png": "/react_portfolio/static/media/WeatherApp.1f39ba3ef0b2ff1a4b5b.png",
+    "static/media/helvetica-neu.ttf": "/react_portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/react_portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff2": "/react_portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "static/media/heroImage.avif": "/react_portfolio/static/media/heroImage.348a0300952d0fe31e98.avif",
+    "static/media/logo.svg": "/react_portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react_portfolio/index.html",
+    "main.5ecfabba.css.map": "/react_portfolio/static/css/main.5ecfabba.css.map",
+    "main.cd65ae27.js.map": "/react_portfolio/static/js/main.cd65ae27.js.map",
+    "453.b3faef14.chunk.js.map": "/react_portfolio/static/js/453.b3faef14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ecfabba.css",
+    "static/js/main.cd65ae27.js"
+  ]
+}
