@@ -2,6 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rahamatunnisa1121.github.io/react_portfolio",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
