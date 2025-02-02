@@ -7,7 +7,7 @@ import Loader from 'react-loaders';
 const Home=()=>{
     const [letterClass,setLetterClass]=useState('text-animate');
     const nameArray=" Rahamatunnisa Shaik,".split("");
-    const jobArray="Web Developer".split("");
+    const jobArray="Full Stack Developer".split("");
     const helloArray="Hello,".split("");
     useEffect(()=>{
         setTimeout(()=>{
@@ -30,7 +30,7 @@ const Home=()=>{
                 <AnimatedLetters letterClass={letterClass}
                 strArray={jobArray} idx={42} />
                 </h1>
-                <h2>Frontend Developer | JavaScript Expert | React Developer |
+                <h2>Full Stack Developer | React Developer |
                 <br />Data Structure Enthusiast</h2>
                 <Link to="/contact" className='contact-button'>CONTACT ME</Link>
             </div>

@@ -14,7 +14,7 @@
         cursor: pointer;
     }
 }
-@for $i from 15 through 54{
+@for $i from 15 through 61{
     .text-animate._#{$i}{
         animation-delay:#{$i/10}s;
     }

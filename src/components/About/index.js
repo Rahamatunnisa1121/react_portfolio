@@ -22,7 +22,7 @@ const About=()=>{
                 </h1>
                 <p>
                     I'm a third-year B.Tech <span>Computer Science</span> student at VRSEC.
-                    I am highly motivated <span>front-end developer</span> seeking a position in a renowned IT company
+                    I am highly motivated <span>full stack developer</span> seeking a position in a renowned IT company
                     where I can work with cutting-edge technologies on exciting and diverse projects.
                 </p>
                 <p>
@@ -44,9 +44,9 @@ const About=()=>{
                     <li className="aboutItem">
                         <img src={cursor} alt="Cursor icon" />
                         <div className="aboutItemText">
-                            <h3>Frontend Developer</h3>
+                            <h3>Full Stack Developer</h3>
                             <p>
-                                Experienced in creating responsive, user-friendly websites with HTML, CSS, JavaScript, and React.
+                                Experienced in creating responsive, user-friendly websites with MERN Stack.
                             </p>
                         </div>
                     </li>

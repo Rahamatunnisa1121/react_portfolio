@@ -39,7 +39,7 @@ const Contact=()=>{
                 </h1>
                 <p>
                     I am a third-year student seeking internship opportunities, particularly in projects that challenge my skills and 
-                    contribute to real-world solutions. I am skilled in data structures and algorithms, web development, and computer 
+                    contribute to real-world solutions. I am skilled in data structures and algorithms, full-stack development, and computer 
                     science fundamentals. If you have any projects or questions, feel free to reach out to me using the contact form below. 
                 </p>
                 <div className='contact-form'>

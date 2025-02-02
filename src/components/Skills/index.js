@@ -21,22 +21,22 @@ const Skills=()=>{
                     <AnimatedLetters letterClass={letterClass} strArray={skillArray} idx={15} />
                 </h1>
                 <p>
-                    I am a dedicated Computer Science student with proficiency in <span>C++</span>, <span>Python</span>, <span>JavaScript</span>,
-                    <span> Java</span>, and <span>SQL</span>, and expertise in <span>HTML5</span>, <span>CSS3</span>, <span>ReactJS</span> and <span>NodeJS</span>. 
+                    I am a dedicated Computer Science student with proficiency in <span>C++</span>, <span>Python</span>, <span>MERN</span>,
+                    <span> Java</span>, and <span>SQL</span>. 
                 </p>
                 <p>
-                    I am skilled in using developer tools like <span>VS Code</span>, <span>Jupyter</span> and <span>PyCharm</span> and have a solid grasp 
+                    I am skilled in using developer tools like <span>VS Code</span>, <span>Jupyter</span> and <span>Android studio</span> and have a solid grasp 
                     of <span>data structures</span>, <span>algorithms</span>, and <span>database management</span>.
                 </p>
                 <p>
-                    My practical experience includes internships in front-end development, AI, and cloud computing,
+                    My practical experience includes internships in front-end development, AI, and cloud computing, and in ML
                     where I worked on creating a responsive e-commerce site, deploying AI models,
                     and building Android applications.
                 </p>
                 <p>
                    Visit my <a href="https://www.linkedin.com/in/rahamatunnisa-shaik-0a8a97258" target="_blank"
                    rel="noopener noreferrer">Linkedin</a> profile for more details. 
-                   Also you can checkout my resume on this <a href="https://drive.google.com/file/d/1Rv9OUF3H3QYhOUdeez-_T4aZX6YaOcQ7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                   Also you can checkout my resume on this <a href="https://drive.google.com/file/d/1P35cqkpMQ7DPBL1Z976hryKu2TnN-WDn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                    link</a>.
                 </p>
             </div>
